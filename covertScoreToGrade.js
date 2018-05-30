@@ -15,6 +15,10 @@ console.log(output); // --> 'A'
 
 Starter Code :*/
 function convertScoreToGrade(score) {
+  if ( score > 100 || score < 0 ) {
+    return 'INVALID SCORE';
+  }
+  
   if (score >= 90){
     return ("A");
   }
